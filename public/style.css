@@ -2,11 +2,15 @@
 p, h1 {color: white; font-family:tahoma,helvettica,sans-serif; font-size: 20pt; text-align: center; }
 h2 {color: white; font-family:tahoma,helvettica,sans-serif; font-size: 15pt; text-align: center; }
 	a {color: blue}
-body {background: url(bookBackground.jpg) gray no-repeat center center fixed;
+head {background-color: #6C6054}
+footer {background-color: #6C6054} /*testing*/
+/*body {background: url(bookBackground.jpg) gray no-repeat center center fixed;*/
+body {background: linear-gradient(110deg, #701931 60%, #FEC524 60%);
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
 	 background-size:cover;}
+
 
 .forms{text-align: center}
 .none {color: red}
