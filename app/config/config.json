@@ -1,28 +1,28 @@
 {
  
-    "development": {
+    "dev": {
  
-        "username": "goldenscholar",
+        "username": "goldscholar",
  
-        "password": "goldenscholar",
+        "password": "G3Sbb5ty",
  
-        "database": "goldenscholardb",
+        "database": "gsdbDev",
  
-        "host": "goldenscholardb.celxaip0boss.us-east-2.rds.amazonaws.com",
+        "host": "gsdb2019.cifpabumekil.us-east-1.rds.amazonaws.com",
  
         "dialect": "mysql"
  
     },
  
-    "test": {
+    "prod": {
  
-        "username": "goldenscholar",
+        "username": "goldscholar",
  
-        "password": "goldenscholar",
+        "password": "G3Sbb5ty",
  
-        "database": "hiThisIsJames",
+        "database": "gsdbProd",
  
-        "host": "goldenscholardb.celxaip0boss.us-east-2.rds.amazonaws.com",
+        "host": "gsdb2019.cifpabumekil.us-east-1.rds.amazonaws.com",
  
         "dialect": "mysql"
  
