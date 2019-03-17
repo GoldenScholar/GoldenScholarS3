@@ -4,8 +4,9 @@ h2 {color: white; font-family:tahoma,helvettica,sans-serif; font-size: 15pt; tex
 	a {color: blue}
 head {background-color: #6C6054}
 footer {background-color: #6C6054} /*testing*/
-/*body {background: url(bookBackground.jpg) gray no-repeat center center fixed;*/
-body {background: linear-gradient(110deg, #701931 60%, #FEC524 60%);
+/*body {background: url(bookBackground.jpg) gray no-repeat center center fixed;
+body {background: linear-gradient(110deg, #701931 60%, #FEC524 60%);*/
+body {background: linear-gradient(110deg, #87CBD8 60%, #CEC7BF 60%);
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
