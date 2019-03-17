@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!--
+     Name:         		Brandon Cressley
+     Project Phase 1: 	Class Attendance System
+	 Purpose:	   		Create an application to record attendance of a class.
+     URL:          		http://unixweb.kutztown.edu/~bcres539/index.php
+     Course:       		CSC 242 - Fall 2015
+     Due Date:     		April 20, 2016
+-->
+<link rel="stylesheet" type="text/css" href="../style.css">
+
+<div align="right"><a href="../logout">Logout</a></div>
+<div align="right"><a href="../facultyHub">Faculty Home</a></div>
+
+
+<h1>Create a Group:</h1>
+<!-- FILL IN INFO FOR GROUPS -->
+		<form id="createGroup" name="createGroup" method="post" action="createGroup">
+			<p> <label>Class Name:<br /></label>
+			<input type="text" name="className" id="className" size="40" value=""/>
+			</p>
+			<br />
+			<p> <label>Class Number:<br /></label>
+			<input type="text" name="classNum" id="classNum" size="40" value=""/>
+			</p>
+			<br />
+			<p> <label>Description:<br /></label>
+			<textarea name="descrip" id="descrip">
+			</textarea>
+			</p>
+			<br />
+			<p><input type="submit" value="Submit"/>
+			<input type="reset" value="Clear"/>
+			</p>
+		</form>

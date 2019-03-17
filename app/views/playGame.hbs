@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <title>            </title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <meta charset="utf-8">
+   </head>
+	<body>
+	<!-- Add run on load fuction here to get individual game types-->
+		<p>
+			<img src="gslogo.png" height=200 />
+			<br>
+			<br>
+			<h1>Select Game: </h1>
+			<!--<p><input type="button" onclick="showFill()"value="Fill in the Blank"/></p>-->
+			<div>
+				{{#each games}}
+				<h1> {{this.gameName}}</h1>
+				<h2> {{this.creatorName}}</h2>
+				{{/each}}
+			</div>
+			<form id="playGame" name="playGame" method="post" action="playGame">
+				<p><input type="submit" value="Play Game" /></p>
+				<p>Game Name: <input type="text" name="gName" id="gName" size="40" value=""/></p>
+				<p><div id="container"/></p>
+			</form>
+			<!-- Go to page indicated-->
+			<!-- Create table for all games, only contains game names and respective types -->
+			<!-- Enter button goes to respective run game page -->
+		</p>
+		<script>
+			function addCount(){
+				i++;
+			}
+			
+			function showFill(){
+				//window.location.href = '/createFill';
+			}
+		
+			
+		</script>
+	</body>
+</html>

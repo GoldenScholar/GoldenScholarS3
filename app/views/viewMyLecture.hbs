@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <title>            </title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <meta charset="utf-8">
+   </head>
+	<body>
+		<p>
+			<img src="gslogo.png" height=200 />
+			<br>
+			<br>
+			<div align="right"><a href="../logout">Logout</a></div>
+			<div align="right"><a href="../facultyHub">Faculty Home</a></div>
+			<div id=forms>
+			<div>
+				{{#each lecture}}
+				<h1> {{this.topicName}}</h1>
+				<h2> {{this.subTopicName}}</h2>
+				<p> {{this.subTopicInfo}}</p>
+				{{/each}}
+			</div>
+			
+			</div>
+		</p>
+	</body>
+</html>

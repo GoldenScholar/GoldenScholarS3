@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <title>            </title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <meta charset="utf-8">
+   </head>
+	<body>
+		<p>
+			<img src="gslogo.png" height=200 />
+			<br>
+			<br>
+			<div align="right"><a href="../logout">Logout</a></div>
+			<div align="right"><a href="../facultyHub">Faculty Home</a></div>
+			<div id=forms>
+			<form id="createLecture" name="createLecture" method="post" action="createLecture">
+				<p><input type="submit" onclick = "showMessage()" value="Upload subtopic" />
+				<input type="button" onclick="returnToPage()"value="Finish Lecture"/></p>
+				<p>Topic Name: <input type="text" name="tName" id="tName" size="40" value=""/></p>
+				<p>Subtopic Name: <input type="text" name="subName0" id="subName0" size="40" value=""/></p>
+				<p>Subtopic Info: <input type="text" name="subInfo0" id="subInfo0" size="40" value=""/></p>
+				<p><div id="container"/></p>
+			</form>
+			
+			</div>
+		</p>
+		<script>
+			var i = 1;
+			var count = document.getElementById("count");
+			var container = document.getElementById("container");
+				// Clear previous contents of the container
+				while (container.hasChildNodes()) {
+					container.removeChild(container.lastChild);
+				}
+			
+			function showMessage(){
+				alert("Subtopic has been added\n\nEdit subtopic name and info to create more entries\n\nClick finish lecture to return to the home page")
+			}
+			
+			function returnToPage(){
+				window.location.href = '/facultyHub';
+			}
+		
+			
+		</script>
+	</body>
+</html>

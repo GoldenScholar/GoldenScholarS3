@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <title>            </title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <meta charset="utf-8">
+   </head>
+	<body>
+		<p>
+			<img src="gslogo.png" height=200 />
+			<br>
+			<br>
+			<div align="right"><a href="../logout">Logout</a></div>
+			<div align="right"><a href="../studentHub">Student Home</a></div>
+			<div id=forms>
+			<form id="createFill" name="createFill" method="post" action="createFill">
+				<p><input type="submit" onclick = "showMessage()" value="Upload Question" />
+				<input type="button" onclick="returnToPage()"value="Finish Game"/></p>
+				<p>Game Name: <input type="text" name="gName" id="gName" size="40" value=""/></p>
+				<p>Question: <input type="text" name="question" id="question" size="40" value=""/></p>
+				<p>Answer: <input type="text" name="answer" id="answer" size="40" value=""/></p>
+				<p><div id="container"/></p>
+			</form>
+			
+			</div>
+		</p>
+		<script>
+			var i = 1;
+			var count = document.getElementById("count");
+			var container = document.getElementById("container");
+				// Clear previous contents of the container
+				while (container.hasChildNodes()) {
+					container.removeChild(container.lastChild);
+				}
+			
+			function showMessage(){
+				alert("Question has been added\n\nEdit question and answer to create more entries\n\nClick finish game to return to the home page")
+			}
+			
+			function returnToPage(){
+				window.location.href = '/studentHub';
+			}
+		
+			
+		</script>
+	</body>
+</html>
